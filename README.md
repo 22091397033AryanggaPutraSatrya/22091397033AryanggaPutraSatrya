@@ -1,5 +1,6 @@
 <h1 align="center">Hai 👋, Saya Aryangga</h1>
-<h3 align="center">Saya merupakan mahasiswa Manajemen Informatika di Universitas Negeri Surabaya. Saya memiliki kemampuan adaptasi yang baik dan dapat bekerja sama dalam tim dengan efektif. Saya memiliki ketertarikan dalam pengembangan aplikasi, khususnya sebagai Web Developer dan Mobile Developer.</h3>
+
+<p align="center"><h3>Saya merupakan mahasiswa Manajemen Informatika di Universitas Negeri Surabaya. Saya memiliki kemampuan adaptasi yang baik dan dapat bekerja sama dalam tim dengan efektif. Saya memiliki ketertarikan dalam pengembangan aplikasi, khususnya sebagai Web Developer dan Mobile Developer.</h3><img src="https://media.tenor.com/y2JXkY1pXkwAAAAM/cat-computer.gif" alt="cat computer gif"/></p>
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
