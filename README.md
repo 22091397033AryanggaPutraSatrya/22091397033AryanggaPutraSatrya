@@ -1,4 +1,4 @@
-<h1 align="center">Hi 👋, Saya Aryangga</h1>
+<h1 align="center">Hai 👋, Saya Aryangga</h1>
 <h3 align="center">Saya merupakan mahasiswa Manajemen Informatika di Universitas Negeri Surabaya. Saya memiliki kemampuan adaptasi yang baik dan dapat bekerja sama dalam tim dengan efektif. Saya memiliki ketertarikan dalam pengembangan aplikasi, khususnya sebagai Web Developer dan Mobile Developer.</h3>
 
 <h3 align="left">Connect with me:</h3>
