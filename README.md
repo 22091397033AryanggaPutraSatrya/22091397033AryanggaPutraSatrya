@@ -7,6 +7,6 @@ Saya merupakan mahasiswa Manajemen Informatika di Universitas Negeri Surabaya. S
 
 ## 🛠️ Teknologi yang Dikuasai
 - **Bahasa Pemrograman**: PHP, JavaScript, HTML, CSS, Dart
-- **Framework**: Laravel, Flutter
+- **Framework**: Laravel, Flutter, Bootstrap, Tailwind
 - **Tools**: Docker, Ansible, Git, MySQL, Apache2
-- **Kontrol Versi**: GitHub, GitLab
+- **Kontrol Versi**: GitHub
