@@ -1,5 +1,5 @@
 # Tentang Saya:
-Saya merupakan mahasiswa Manajemen Informatika di Universitas Negeri Surabaya. Saya memiliki kemampuan adaptasi yang baik dan dapat bekerja sama dalam tim dengan efektif. Saya memiliki ketertarikan dalam pengembangan aplikasi, khususnya sebagai Web Developer dan Mobile Developer.
+Saya merupakan lulusan D4 Manajemen Informatika Universitas Negeri Surabaya dengan konsentrasi pada pengembangan perangkat lunak. Saya memiliki kemampuan adaptasi yang tinggi serta terampil dalam berkolaborasi di dalam tim untuk menyelesaikan berbagai proyek teknologi. Berbekal minat yang besar pada Web dan Mobile Development, saya terbiasa membangun platform interaktif dan sistem aplikasi yang responsif, terstruktur, serta berorientasi pada kebutuhan pengguna.
 
 
 ## 🌐 Sosial Media:
