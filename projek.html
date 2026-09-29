@@ -62,10 +62,10 @@
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-secondary-dark border-b border-accent-purple/30">
             <div class="px-2 pt-2 pb-4 space-y-1 sm:px-3">
-                <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium bg-accent-purple/20 text-accent-light">
+                <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:bg-accent-purple/20 hover:text-accent-light transition duration-300">
                     Beranda
                 </a>
-                <a href="projek.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:bg-accent-purple/20 hover:text-accent-light transition duration-300">
+                <a href="projek.html" class="block px-3 py-2 rounded-md text-base font-medium bg-accent-purple/20 text-accent-light">
                     Proyek
                 </a>
                 <a href="sertifikat.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:bg-accent-purple/20 hover:text-accent-light transition duration-300">
@@ -196,18 +196,25 @@
     </div>
 
     <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
         const projectsData = {
             sawahub: {
                 title: 'Sawahub',
                 desc: 'SawaHub adalah platform persewaan lahan sawah berbasis seluler yang dirancang untuk mendigitalisasi dan mempermudah transaksi antara pemilik dan penyewa lahan secara terstruktur. Aplikasi ini dikembangkan menggunakan Flutter serta terintegrasi dengan Google Firebase serta Cloudinary guna mengelola verifikasi dokumen, pemetaan lokasi, dan pengiriman notifikasi push secara real-time. Melalui otomatisasi dokumen perjanjian dan transparansi data lahan, platform ini berhasil meningkatkan efisiensi operasional dalam proses sewa-menyewa lahan pertanian.',
                 tech: ['Flutter', 'Firebase', 'Cloudinary'],
-                images: ['sawahub-1.jpg', 'sawahub-2.jpg']
+                images: ['sawahub-1.png', 'sawahub-2.png']
             },
             ecommerce: {
                 title: 'Website E-Commerce',
                 desc: 'Mengembangkan platform e-commerce berbasis Laravel dan MySQL yang dirancang untuk menyajikan katalog produk secara komprehensif, dilengkapi dengan deskripsi detail, fungsi pencarian yang responsif, serta sistem pemfilteran intuitif guna mengoptimalkan pengalaman navigasi dan kenyamanan pengguna saat bertransaksi.',
                 tech: ['Laravel', 'MySQL', 'Tailwind CSS'],
-                images: ['ecommerce-1.jpg', 'ecommerce-2.jpg']
+                images: ['ecommerce-1.jpeg', 'ecommerce-2.jpeg']
             },
             keuangan: {
                 title: 'Aplikasi Pencatatan Keuangan',
@@ -219,7 +226,7 @@
                 title: 'Website Pemilu',
                 desc: 'Mengembangkan platform pemungutan suara online berbasis Laravel dan Bootstrap serta MySQL untuk meningkatkan transparansi serta efisiensi pemilu legislatif. Bertanggung jawab dalam pembuatan source code, arsitektur basis data, autentikasi berbasis NIK, hingga fitur pencoblosan interaktif (DPR RI, DPD RI, DPRD Provinsi, DPRD Kabupaten/Kota).',
                 tech: ['Laravel', 'MySQL', 'Bootstrap'],
-                images: ['pemilu-1.jpg', 'pemilu-2.jpg']
+                images: ['pemilu-1.png', 'pemilu-2.png']
             }
         }
 
