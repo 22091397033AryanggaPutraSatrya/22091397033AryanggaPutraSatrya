@@ -32,57 +32,8 @@
             <p class="text-gray-400">Beberapa karya dan sistem yang telah saya kembangkan.</p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div onclick="openModal('sawahub')" class="bg-[#1B1A55] rounded-xl p-6 cursor-pointer transform transition hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#535C91]/30 flex flex-col h-full">
-                <div class="flex justify-between items-start mb-4">
-                    <h2 class="text-2xl font-bold text-white">Sawahub</h2>
-                    <span class="text-[#9290C3] text-sm">Jan 2026 – Jun 2026</span>
-                </div>
-                <p class="text-gray-300 text-sm leading-relaxed mb-6 flex-grow">SawaHub adalah platform persewaan lahan sawah berbasis seluler yang dirancang untuk mendigitalisasi dan mempermudah transaksi antara pemilik dan penyewa lahan secara terstruktur...</p>
-                <div class="flex flex-wrap gap-2 mt-auto">
-                    <span class="bg-[#535C91] text-white text-xs font-semibold px-3 py-1 rounded-full">Flutter</span>
-                    <span class="bg-[#535C91] text-white text-xs font-semibold px-3 py-1 rounded-full">Firebase</span>
-                    <span class="bg-[#535C91] text-white text-xs font-semibold px-3 py-1 rounded-full">Cloudinary</span>
-                </div>
-            </div>
-
-            <div onclick="openModal('ecommerce')" class="bg-[#1B1A55] rounded-xl p-6 cursor-pointer transform transition hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#535C91]/30 flex flex-col h-full">
-                <div class="flex justify-between items-start mb-4">
-                    <h2 class="text-2xl font-bold text-white">Website E-Commerce</h2>
-                    <span class="text-[#9290C3] text-sm">Des 2024 – Jan 2025</span>
-                </div>
-                <p class="text-gray-300 text-sm leading-relaxed mb-6 flex-grow">Mengembangkan platform e-commerce berbasis Laravel dan MySQL yang dirancang untuk menyajikan katalog produk secara komprehensif, dilengkapi dengan deskripsi detail...</p>
-                <div class="flex flex-wrap gap-2 mt-auto">
-                    <span class="bg-[#535C91] text-white text-xs font-semibold px-3 py-1 rounded-full">Laravel</span>
-                    <span class="bg-[#535C91] text-white text-xs font-semibold px-3 py-1 rounded-full">MySQL</span>
-                    <span class="bg-[#535C91] text-white text-xs font-semibold px-3 py-1 rounded-full">Tailwind CSS</span>
-                </div>
-            </div>
-
-            <div onclick="openModal('keuangan')" class="bg-[#1B1A55] rounded-xl p-6 cursor-pointer transform transition hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#535C91]/30 flex flex-col h-full">
-                <div class="flex justify-between items-start mb-4">
-                    <h2 class="text-2xl font-bold text-white">Aplikasi Pencatatan Keuangan</h2>
-                    <span class="text-[#9290C3] text-sm">Mar 2024 – Jun 2024</span>
-                </div>
-                <p class="text-gray-300 text-sm leading-relaxed mb-6 flex-grow">Aplikasi pengelolaan keuangan pribadi ini memudahkan pengguna mencatat pemasukan dan pengeluaran harian yang tersaji otomatis dalam bentuk laporan visual...</p>
-                <div class="flex flex-wrap gap-2 mt-auto">
-                    <span class="bg-[#535C91] text-white text-xs font-semibold px-3 py-1 rounded-full">Flutter</span>
-                </div>
-            </div>
-
-            <div onclick="openModal('pemilu')" class="bg-[#1B1A55] rounded-xl p-6 cursor-pointer transform transition hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#535C91]/30 flex flex-col h-full">
-                <div class="flex justify-between items-start mb-4">
-                    <h2 class="text-2xl font-bold text-white">Website Pemilu</h2>
-                    <span class="text-[#9290C3] text-sm">Mar 2024 – Jun 2024</span>
-                </div>
-                <p class="text-gray-300 text-sm leading-relaxed mb-6 flex-grow">Mengembangkan platform pemungutan suara online berbasis Laravel dan Bootstrap serta MySQL untuk meningkatkan transparansi serta efisiensi pemilu legislatif...</p>
-                <div class="flex flex-wrap gap-2 mt-auto">
-                    <span class="bg-[#535C91] text-white text-xs font-semibold px-3 py-1 rounded-full">Laravel</span>
-                    <span class="bg-[#535C91] text-white text-xs font-semibold px-3 py-1 rounded-full">MySQL</span>
-                    <span class="bg-[#535C91] text-white text-xs font-semibold px-3 py-1 rounded-full">Bootstrap</span>
-                </div>
-            </div>
-        </div>
+        <!-- Wadah Daftar Proyek (Akan diisi oleh Javascript) -->
+        <div id="projek-container" class="grid grid-cols-1 md:grid-cols-2 gap-8"></div>
     </main>
 
     <!-- Wadah Footer -->
@@ -101,114 +52,130 @@
             </div>
             
             <p id="modalDesc" class="text-gray-300 text-sm md:text-base leading-relaxed mb-5">Deskripsi</p>
-            <div id="modalTech" class="flex flex-wrap gap-2"></div>
+            <div id="modalTech" class="flex flex-wrap gap-2 mb-6"></div>
+            
+            <!-- Tombol GitHub (Tampil Otomatis Jika Ada Link) -->
+            <a id="modalGithubBtn" href="#" target="_blank" class="inline-flex items-center justify-center px-5 py-2.5 bg-[#535C91] hover:bg-[#9290C3] text-white hover:text-[#070F2B] text-sm font-semibold rounded-lg transition-colors shadow-lg hidden">
+                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" />
+                </svg>
+                Lihat Repository
+            </a>
         </div>
     </div>
 
-<script>
-    async function loadComponents() {
-        // 1. Muat Header & Footer secara sejajar
-        const [headerRes, footerRes] = await Promise.all([
-            fetch('header.html').then(res => res.text()),
-            fetch('footer.html').then(res => res.text())
-        ]);
+    <!-- Script Data Proyek -->
+    <script src="projek.js"></script>
 
-        document.getElementById('header-container').innerHTML = headerRes;
-        document.getElementById('footer-container').innerHTML = footerRes;
-
-        // 2. Event Menu Mobile
-        document.getElementById('mobile-menu-btn')?.addEventListener('click', () => {
-            document.getElementById('mobile-menu')?.classList.toggle('hidden');
-        });
-
-        // 3. Opsi Otomatis: Aktifkan menu sesuai URL halaman saat ini
-        const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-        document.querySelectorAll(`a[href="${currentPage}"]`).forEach(link => {
-            if (link.closest('#mobile-menu')) {
-                link.className = "block px-3 py-2 rounded-md text-base font-medium bg-accent-purple/20 text-accent-light";
-            } else if (link.closest('nav')) {
-                link.className = "text-accent-light font-semibold border-b-2 border-accent-light px-1 py-2 transition duration-300";
-            }
-        });
-    }
-
-    loadComponents();
-</script>
-
-    <!-- Script Modal Proyek -->
+    <!-- Script Memanggil Komponen & Logika Modal -->
     <script>
-        const projectsData = {
-            sawahub: {
-                title: 'SawaHub',
-                desc: 'SawaHub adalah platform persewaan lahan sawah berbasis seluler yang dirancang untuk mendigitalisasi dan mempermudah transaksi antara pemilik dan penyewa lahan secara terstruktur. Aplikasi ini dikembangkan menggunakan Flutter serta terintegrasi dengan Google Firebase serta Cloudinary guna mengelola verifikasi dokumen, pemetaan lokasi, dan pengiriman notifikasi push secara real-time. Melalui otomatisasi dokumen perjanjian dan transparansi data lahan, platform ini berhasil meningkatkan efisiensi operasional dalam proses sewa-menyewa lahan pertanian.',
-                tech: ['Flutter', 'Firebase', 'Cloudinary'],
-                images: ['sawahub-1.jpg', 'sawahub-2.jpg']
-            },
-            ecommerce: {
-                title: 'Website E-Commerce',
-                desc: 'Mengembangkan platform e-commerce berbasis Laravel dan MySQL yang dirancang untuk menyajikan katalog produk secara komprehensif, dilengkapi dengan deskripsi detail, fungsi pencarian yang responsif, serta sistem pemfilteran intuitif guna mengoptimalkan pengalaman navigasi dan kenyamanan pengguna saat bertransaksi.',
-                tech: ['Laravel', 'MySQL', 'Tailwind CSS'],
-                images: ['ecommerce-1.jpeg', 'ecommerce-2.jpeg']
-            },
-            keuangan: {
-                title: 'Aplikasi Pencatatan Keuangan',
-                desc: 'Aplikasi pengelolaan keuangan pribadi ini memudahkan pengguna mencatat pemasukan dan pengeluaran harian yang tersaji otomatis dalam bentuk laporan visual. Terintegrasi dengan REST API tersandi, platform ini menjamin keamanan data transaksi serta efisiensi pemantauan arus kas pengguna secara real-time.',
-                tech: ['Flutter'],
-                images: ['keuangan-1.jpg', 'keuangan-2.jpg']
-            },
-            pemilu: {
-                title: 'Website Pemilu',
-                desc: 'Mengembangkan platform pemungutan suara online berbasis Laravel dan Bootstrap serta MySQL untuk meningkatkan transparansi serta efisiensi pemilu legislatif. Bertanggung jawab dalam pembuatan source code, arsitektur basis data, autentikasi berbasis NIK, hingga fitur pencoblosan interaktif (DPR RI, DPD RI, DPRD Provinsi, DPRD Kabupaten/Kota).',
-                tech: ['Laravel', 'MySQL', 'Bootstrap'],
-                images: ['pemilu-1.png', 'pemilu-2.png']
-            }
+        async function loadComponents() {
+            const [headerRes, footerRes] = await Promise.all([
+                fetch('header.html').then(res => res.text()),
+                fetch('footer.html').then(res => res.text())
+            ]);
+
+            document.getElementById('header-container').innerHTML = headerRes;
+            document.getElementById('footer-container').innerHTML = footerRes;
+
+            document.getElementById('mobile-menu-btn')?.addEventListener('click', () => {
+                document.getElementById('mobile-menu')?.classList.toggle('hidden');
+            });
+
+            const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+            document.querySelectorAll(`a[href="${currentPage}"]`).forEach(link => {
+                if (link.closest('#mobile-menu')) {
+                    link.className = "block px-3 py-2 rounded-md text-base font-medium bg-accent-purple/20 text-accent-light";
+                } else if (link.closest('nav')) {
+                    link.className = "text-accent-light font-semibold border-b-2 border-accent-light px-1 py-2 transition duration-300";
+                }
+            });
         }
 
-        let currentProject = ''
-        let currentImageIndex = 0
+        // Fungsi Untuk Merender Kartu Proyek ke HTML
+        function renderProjek() {
+            const container = document.getElementById('projek-container');
+            let html = '';
+
+            for (const [id, project] of Object.entries(projectsData)) {
+                let techHtml = '';
+                project.tech.forEach(tech => {
+                    techHtml += `<span class="bg-[#535C91] text-white text-xs font-semibold px-3 py-1 rounded-full">${tech}</span>`;
+                });
+
+                html += `
+                <div onclick="openModal('${id}')" class="bg-[#1B1A55] rounded-xl p-6 cursor-pointer transform transition hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#535C91]/30 flex flex-col h-full">
+                    <div class="flex justify-between items-start mb-4">
+                        <h2 class="text-2xl font-bold text-white">${project.title}</h2>
+                        <span class="text-[#9290C3] text-sm whitespace-nowrap ml-2">${project.period}</span>
+                    </div>
+                    <p class="text-gray-300 text-sm leading-relaxed mb-6 flex-grow">${project.shortDesc}</p>
+                    <div class="flex flex-wrap gap-2 mt-auto">
+                        ${techHtml}
+                    </div>
+                </div>`;
+            }
+            container.innerHTML = html;
+        }
+
+        let currentProject = '';
+        let currentImageIndex = 0;
 
         function openModal(id) {
-            currentProject = id
-            currentImageIndex = 0
-            const project = projectsData[id]
+            currentProject = id;
+            currentImageIndex = 0;
+            const project = projectsData[id];
             
-            document.getElementById('modalTitle').innerText = project.title
-            document.getElementById('modalDesc').innerText = project.desc
+            document.getElementById('modalTitle').innerText = project.title;
+            document.getElementById('modalDesc').innerText = project.desc;
             
-            const techContainer = document.getElementById('modalTech')
-            techContainer.innerHTML = ''
+            const techContainer = document.getElementById('modalTech');
+            techContainer.innerHTML = '';
             project.tech.forEach(tech => {
-                const span = document.createElement('span')
-                span.className = 'bg-[#535C91] text-white text-xs font-semibold px-3 py-1 rounded-full'
-                span.innerText = tech
-                techContainer.appendChild(span)
-            })
+                const span = document.createElement('span');
+                span.className = 'bg-[#535C91] text-white text-xs font-semibold px-3 py-1 rounded-full';
+                span.innerText = tech;
+                techContainer.appendChild(span);
+            });
+
+            // Logika Tombol GitHub
+            const githubBtn = document.getElementById('modalGithubBtn');
+            if (project.github && project.github !== '') {
+                githubBtn.href = project.github;
+                githubBtn.style.display = 'inline-flex';
+            } else {
+                githubBtn.style.display = 'none';
+            }
             
-            updateImageDisplay()
-            document.getElementById('projectModal').classList.remove('hidden')
+            updateImageDisplay();
+            document.getElementById('projectModal').classList.remove('hidden');
         }
 
         function closeModal() {
-            document.getElementById('projectModal').classList.add('hidden')
+            document.getElementById('projectModal').classList.add('hidden');
         }
 
         function updateImageDisplay() {
-            const project = projectsData[currentProject]
-            const imgElement = document.getElementById('modalImage')
-            imgElement.src = project.images[currentImageIndex]
+            const project = projectsData[currentProject];
+            const imgElement = document.getElementById('modalImage');
+            imgElement.src = project.images[currentImageIndex];
         }
 
         function prevImage() {
-            const project = projectsData[currentProject]
-            currentImageIndex = (currentImageIndex === 0) ? project.images.length - 1 : currentImageIndex - 1
-            updateImageDisplay()
+            const project = projectsData[currentProject];
+            currentImageIndex = (currentImageIndex === 0) ? project.images.length - 1 : currentImageIndex - 1;
+            updateImageDisplay();
         }
 
         function nextImage() {
-            const project = projectsData[currentProject]
-            currentImageIndex = (currentImageIndex === project.images.length - 1) ? 0 : currentImageIndex + 1
-            updateImageDisplay()
+            const project = projectsData[currentProject];
+            currentImageIndex = (currentImageIndex === project.images.length - 1) ? 0 : currentImageIndex + 1;
+            updateImageDisplay();
         }
+
+        // Jalankan Fungsi
+        loadComponents();
+        renderProjek();
     </script>
 </body>
 </html>
