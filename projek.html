@@ -22,59 +22,10 @@
 </head>
 <body class="bg-[#070F2B] text-gray-200 font-sans antialiased flex flex-col min-h-screen">
 
-    <header class="bg-secondary-dark/90 backdrop-blur-md sticky top-0 z-50 border-b border-accent-purple/30 shadow-lg">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-20">
-                <!-- Logo -->
-                <div class="flex-shrink-0 flex items-center">
-                    <a href="index.html" class="text-2xl font-bold tracking-wider text-white transition-transform duration-300 hover:scale-105">
-                        Ryts<span class="text-accent-light">Porto</span>
-                    </a>
-                </div>
+    <!-- Wadah Header -->
+    <div id="header-container"></div>
 
-                <!-- Desktop Menu -->
-                <nav class="hidden md:flex space-x-8">
-                    <a href="index.html" class="text-gray-300 hover:text-accent-light hover:border-b-2 hover:border-accent-purple px-1 py-2 transition duration-300">
-                        Beranda
-                    </a>
-                    <a href="projek.html" class="text-accent-light font-semibold border-b-2 border-accent-light px-1 py-2 transition duration-300">
-                        Proyek
-                    </a>
-                    <a href="sertifikat.html" class="text-gray-300 hover:text-accent-light hover:border-b-2 hover:border-accent-purple px-1 py-2 transition duration-300">
-                        Sertifikat
-                    </a>
-                </nav>
-
-                <!-- CTA & Mobile Button -->
-                <div class="flex items-center space-x-4">
-                    <a href="mailto:anggaangga0204@gmail.com" class="hidden md:inline-flex items-center justify-center px-5 py-2.5 border border-transparent text-sm font-medium rounded-full text-primary-dark bg-accent-light hover:bg-white transition-colors duration-300 shadow-[0_0_15px_rgba(146,144,195,0.4)] hover:shadow-[0_0_20px_rgba(146,144,195,0.7)]">
-                        Hubungi Saya
-                    </a>
-                    <button id="mobile-menu-btn" class="md:hidden text-gray-300 hover:text-white focus:outline-none p-2">
-                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-                        </svg>
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-secondary-dark border-b border-accent-purple/30">
-            <div class="px-2 pt-2 pb-4 space-y-1 sm:px-3">
-                <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:bg-accent-purple/20 hover:text-accent-light transition duration-300">
-                    Beranda
-                </a>
-                <a href="projek.html" class="block px-3 py-2 rounded-md text-base font-medium bg-accent-purple/20 text-accent-light">
-                    Proyek
-                </a>
-                <a href="sertifikat.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:bg-accent-purple/20 hover:text-accent-light transition duration-300">
-                    Sertifikat
-                </a>
-            </div>
-        </div>
-    </header>
-
+    <!-- Konten Utama -->
     <main class="flex-grow max-w-6xl mx-auto px-4 py-16 w-full">
         <div class="mb-12">
             <h1 class="text-4xl font-bold text-white mb-4">Proyek Saya</h1>
@@ -134,56 +85,15 @@
         </div>
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-secondary-dark/80 border-t border-accent-purple/30 mt-12 py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col items-center justify-center space-y-6">
-                <!-- Social Links -->
-                <div class="flex space-x-6">
-                    <!-- Email -->
-                    <a href="mailto:anggaangga0204@gmail.com" class="text-gray-400 hover:text-accent-light transition-colors duration-300" aria-label="Email">
-                        <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
-                        </svg>
-                    </a>
-                    
-                    <!-- GitHub -->
-                    <a href="https://github.com/22091397033AryanggaPutraSatrya" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-accent-light transition-colors duration-300" aria-label="GitHub">
-                        <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                            <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" />
-                        </svg>
-                    </a>
+    <!-- Wadah Footer -->
+    <div id="footer-container"></div>
 
-                    <!-- LinkedIn -->
-                    <a href="https://www.linkedin.com/in/aryangga-putra-satrya-40545a2ba/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-accent-light transition-colors duration-300" aria-label="LinkedIn">
-                        <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                            <path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clip-rule="evenodd" />
-                        </svg>
-                    </a>
-
-                    <!-- Instagram -->
-                    <a href="https://www.instagram.com/aryanggaps_" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-accent-light transition-colors duration-300" aria-label="Instagram">
-                        <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                            <path fill-rule="evenodd" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" clip-rule="evenodd" />
-                        </svg>
-                    </a>
-                </div>
-                
-                <!-- Copyright -->
-                <div class="text-sm text-gray-500 font-medium">
-                    &copy; 2026 Aryangga Putra Satrya. All rights reserved.
-                </div>
-            </div>
-        </div>
-    </footer>
-
+    <!-- Modal Proyek -->
     <div id="projectModal" class="fixed inset-0 z-50 hidden bg-black/80 flex items-center justify-center p-4">
-        <!-- Perubahan ada di baris bawah ini: penambahan max-h-[90vh] dan overflow-y-auto -->
         <div class="bg-[#1B1A55] rounded-xl max-w-3xl w-full p-5 sm:p-6 relative max-h-[90vh] overflow-y-auto shadow-2xl">
             <button onclick="closeModal()" class="absolute top-4 right-4 text-[#9290C3] hover:text-white text-3xl font-bold leading-none z-10">&times;</button>
             <h2 id="modalTitle" class="text-xl sm:text-2xl font-bold text-white mb-4 pr-8">Judul</h2>
             
-            <!-- Perubahan tinggi gambar: h-48 untuk mobile, sm:h-64, md:h-80 untuk desktop -->
             <div class="relative w-full h-48 sm:h-64 md:h-80 bg-[#070F2B] rounded-lg mb-4 flex items-center justify-center border border-[#535C91] overflow-hidden">
                 <img id="modalImage" src="" alt="Gambar Proyek" class="max-h-full max-w-full object-contain p-2">
                 <button onclick="prevImage()" class="absolute left-2 bg-[#1B1A55]/80 text-white p-2 rounded-full hover:bg-[#535C91] transition">&lt;</button>
@@ -195,13 +105,38 @@
         </div>
     </div>
 
-    <script>
-        const btn = document.getElementById('mobile-menu-btn');
-        const menu = document.getElementById('mobile-menu');
+<script>
+    async function loadComponents() {
+        // 1. Muat Header & Footer secara sejajar
+        const [headerRes, footerRes] = await Promise.all([
+            fetch('header.html').then(res => res.text()),
+            fetch('footer.html').then(res => res.text())
+        ]);
 
-        btn.addEventListener('click', () => {
-            menu.classList.toggle('hidden');
+        document.getElementById('header-container').innerHTML = headerRes;
+        document.getElementById('footer-container').innerHTML = footerRes;
+
+        // 2. Event Menu Mobile
+        document.getElementById('mobile-menu-btn')?.addEventListener('click', () => {
+            document.getElementById('mobile-menu')?.classList.toggle('hidden');
         });
+
+        // 3. Opsi Otomatis: Aktifkan menu sesuai URL halaman saat ini
+        const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+        document.querySelectorAll(`a[href="${currentPage}"]`).forEach(link => {
+            if (link.closest('#mobile-menu')) {
+                link.className = "block px-3 py-2 rounded-md text-base font-medium bg-accent-purple/20 text-accent-light";
+            } else if (link.closest('nav')) {
+                link.className = "text-accent-light font-semibold border-b-2 border-accent-light px-1 py-2 transition duration-300";
+            }
+        });
+    }
+
+    loadComponents();
+</script>
+
+    <!-- Script Modal Proyek -->
+    <script>
         const projectsData = {
             sawahub: {
                 title: 'SawaHub',
